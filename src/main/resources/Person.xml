@@ -1,0 +1,6 @@
+<Person  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://NamespaceTest.com/Purchase Main.xsd">
+    <FirstName>David</FirstName>
+    <LastName>Crhonek</LastName>
+    <Age>344</Age>
+</Person>

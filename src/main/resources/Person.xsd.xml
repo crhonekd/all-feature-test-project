@@ -1,0 +1,9 @@
+<myn:Person xmlns:myn="MyNamespace">
+  e
+  <myn:FirstName>string</myn:FirstName>
+  gero
+  <myn:LastName>string</myn:LastName>
+  cum
+  <myn:Age>string</myn:Age>
+  sonoras
+</myn:Person>
