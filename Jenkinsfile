@@ -16,12 +16,13 @@ tools {
                 stage('Clean') {
             steps {
                 echo 'Cleanig..'
-                mvn -skipTests install
+                sh 'mvn clean'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'mvn install -skipTests'
             }
         }
         stage('Test') {
