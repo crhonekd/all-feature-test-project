@@ -22,7 +22,7 @@ tools {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn install -skipTests'
+                sh 'mvn install -DskipTests'
             }
         }
         stage('Test') {
