@@ -51,6 +51,7 @@ public class MockitoTest {
         assertEquals(true, response.isAckSent());
         verify(fileService).importAndPersist(file);
         verify(ackService, times(1)).sendPositiceAck(header);
+        verify(ackService, times(1)).setSomeName("David");
         verify(ackService, never()).sendNegativeAck(header);
 
 

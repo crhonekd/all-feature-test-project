@@ -3,6 +3,7 @@ package com.dave.kafka.spring.beans;
 import com.dave.kafka.spring.configuration.GeneralConfiguration;
 import com.dave.kafka.spring.configuration.ReceiverConfiguration;
 import com.dave.kafka.spring.configuration.SenderConfiguration;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import static org.junit.Assert.assertEquals;
 @ContextConfiguration(classes = {SenderConfiguration.class, ReceiverConfiguration.class,
         GeneralConfiguration.class})
 @TestPropertySource("classpath:application.properties")
+@Ignore
 public class ReceiverTest {
 
     private static final String HELLOWORLD_TOPIC = "david_test";

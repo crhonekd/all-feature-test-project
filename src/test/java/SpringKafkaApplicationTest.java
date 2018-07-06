@@ -8,6 +8,7 @@ import com.dave.kafka.spring.model.Address;
 import com.dave.kafka.spring.model.Name;
 import com.dave.kafka.spring.model.Person;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ import static org.junit.Assert.*;
 @ContextConfiguration(classes = {SenderConfiguration.class, ReceiverConfiguration.class,
         GeneralConfiguration.class})
 @TestPropertySource("classpath:application.properties")
+@Ignore
 public class SpringKafkaApplicationTest {
 
     private static final String HELLOWORLD_TOPIC = "david_test";

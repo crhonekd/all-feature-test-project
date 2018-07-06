@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="emp1" class="com.dave.model.Employee">
+        <property name="firstName" value="David"/>
+        <property name="age" value="23"/>
+    </bean>
+
+    <bean id="mapper" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+        <property name="classesToBeBound">
+            <list>
+                <value>com.dave.xmlSchemaValidation.model.Person</value>
+            </list>
+        </property>
+
+        <property name="schemas">
+            <list>
+                <value>Person.xsd</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

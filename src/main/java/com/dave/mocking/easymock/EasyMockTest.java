@@ -1,19 +1,21 @@
 package com.dave.mocking.easymock;
 
 import com.dave.mocking.model.*;
-import org.easymock.EasyMock;
-import org.easymock.EasyMockRunner;
-import org.easymock.Mock;
-import org.easymock.TestSubject;
+import org.easymock.*;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 /**
  * Created by David on 07/10/2017.
  */
 @RunWith(EasyMockRunner.class)
+@Ignore
 public class EasyMockTest {
 
     @Mock
