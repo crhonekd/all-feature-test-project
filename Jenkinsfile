@@ -16,7 +16,7 @@ tools {
                 stage('Clean') {
             steps {
                 echo 'Cleanig..'
-                mvn clean
+                mvn -skipTests install
             }
         }
         stage('Build') {
