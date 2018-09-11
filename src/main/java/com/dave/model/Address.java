@@ -1,8 +1,11 @@
 package com.dave.model;
 
+import lombok.ToString;
+
 /**
  * Created by David on 06/03/2017.
  */
+@ToString
 public class Address {
     private String city;
     private int houseNumber;
